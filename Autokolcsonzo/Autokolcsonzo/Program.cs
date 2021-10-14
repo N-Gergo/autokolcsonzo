@@ -119,11 +119,11 @@ namespace Kolcsonzo
 			return auto;
 		}
 
-		public KolcsonozhetoAuto randomHasznaltAuto()
+		public KolcsonozhetoAuto randomHasznaltAuto(int seed)
         {
-			KolcsonozhetoAuto auto = randomUjAuto(1);
+			KolcsonozhetoAuto auto = randomUjAuto(seed);
 
-            if (auto.getGyartasEve()==20221)
+            if (auto.getGyartasEve()==2021)
             {
 				auto.setGyartasiIdo(auto.getGyartasEve() - 4);
             }
@@ -132,7 +132,124 @@ namespace Kolcsonzo
 
 			return auto;
         }
+		public static KolcsonozhetoAuto adatBekeres()
+        {
+			string rszam = "";
+			string gyarto = "";
+			int gyartev = 0;
+			int utasokszama = 0;
+			int tartalym = 0;
+			double lpkm = 0.0;
+			char kat;
+			bool rsz=false, gyart = false, gyev = false, utas = false, tartaly = false, fogy = false;
+			do
+			{
+				Console.WriteLine("Adja meg az autó rendszámát:");
+				rszam = Console.ReadLine();
+				if(rszam.Length<7)
+                {
+					rsz = false;
+					Console.WriteLine("Helytelen rendszám!");
+                }
+				else if((rszam[0] >='A' &&  rszam[0] <='Z') && (rszam[1] >= 'A' && rszam[1] <= 'Z') && (rszam[2] >= 'A' && rszam[2] <= 'Z') && rszam[3]=='-' && (rszam[4] >= '0' && rszam[4] <= '9') && (rszam[5] >= '0' && rszam[5] <= '9') && (rszam[6] >= '0' && rszam[6] <= '9'))
+                {
+					rsz = true;
+					Console.WriteLine("Rendszám elfogadva.");
+                }
+				else
+                {
+					rsz = false;
+					Console.WriteLine("Helytelen rendszám!");
+                }
+			}
+			while (!rsz);
+			do
+			{
+				Console.WriteLine("Adja meg az autó gyártóját:");
+				gyarto = Console.ReadLine();
+				if(gyarto.Length!=0 && gyarto.Length>=2)
+                {
+					gyart = true;
+					Console.WriteLine("Gyártó elfogadva.");
+                }
+				else
+                {
+					gyart = false;
+					Console.WriteLine("Helytelen gyártó!");
+                }
+			}
+			while (!gyart);
+			do
+			{
+				Console.WriteLine("Adja meg az autó gyártási évét:");
+				gyartev =Convert.ToInt32(Console.ReadLine());
+				if (gyartev>=1908 && gyartev<=2021)
+                {
+					gyev = true;
+					Console.WriteLine("Gyártási év elfogadva.");
+                }
+				else
+                {
+					gyev = false;
+					Console.WriteLine("Nem megfelelő gyártási év!");
+                }
+			}
+			while (!ev);
+			do
+			{
+				Console.WriteLine("Adja meg az utasok számát:");
+				utasokszama = Convert.ToInt32(Console.ReadLine());
+				if(utasokszama>=1 && utasokszama<=9)
+                {
+					utas = true;
+					Console.WriteLine("A férőhely megfelelő.");
+                }
+				else
+                {
+					utas = false;
+					Console.WriteLine("Férőhelyek nem megfelelő!");
+                }
+			}
+			while (!utas);
+			do
+			{
+				Console.WriteLine("Adja meg az autó tartály méretét:");
+				tartalym = Convert.ToInt32(Console.ReadLine());
+				if(tartalym>=20 && tartalym<=100)
+                {
+					tartaly = true;
+					Console.WriteLine("Tartály méret elfogadva.");
+                }
+				else
+                {
+					tartaly = false;
+					Console.WriteLine("Tartály méret nem megfelelő!");
+                }
+			}
+			while (!tartaly);
+			do
+			{
+				Console.WriteLine("Adja meg az autó fogyasztását(l/100km):");
+				lpkm = Double.Parse(Console.ReadLine());
+				if (lpkm >= 4.0 && lpkm <= 60.0)
+				{
+					fogy = true;
+					Console.WriteLine("Fogyasztás elfogadva.");
+				}
+				else
+				{
+					fogy = false;
+					Console.WriteLine("Fogyasztás nem megfelelő!");
+				}
+			}
+			while (!fogy);
+			
+			Console.WriteLine("Adja meg az autó kategoriáját(A/B/C):");
+			kat = Convert.ToChar(Console.ReadLine());
 
+			Console.WriteLine("Autó bekérés megtörtént!");
+			KolcsonozhetoAuto auto = new KolcsonozhetoAuto(rszam,gyarto,gyartev,utasokszama,tartalym,lpkm,kat);
+			return auto;
 
 
 	}
