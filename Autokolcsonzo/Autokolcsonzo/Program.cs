@@ -28,16 +28,20 @@ namespace Kolcsonzo
 			flotta[2] = haromAuto;
 
 
-			flotta[3] = randomUjAuto(3);
-			flotta[4] = randomUjAuto(4);
+			flotta[3] = randomUjAuto(1);
+			flotta[4] = randomUjAuto(2);
 
 
-			flotta[5] = adatBekeres();
-			flotta[6] = adatBekeres();
+			flotta[5] = randomHasznaltAuto(4);
+			flotta[6] = randomHasznaltAuto(5);
 			flotta[7] = adatBekeres();
 
+			for (int i = 0; i < 7; i++)
+			{
+				flotta[i].kategoriaBeallitas();
+			}
 
-			for (int i = 0; i <= 4; i++)
+			for (int i = 0; i <= 7; i++)
 			{
 
 				Console.Write(flotta[i].getRendszam() + " ; ");
@@ -50,22 +54,7 @@ namespace Kolcsonzo
 				Console.Write(flotta[i].getBerelheto() + " ; ");
 				Console.WriteLine(flotta[i].getKategoria());
 			}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
@@ -124,7 +113,7 @@ namespace Kolcsonzo
 			return auto;
 		}
 
-		public KolcsonozhetoAuto randomHasznaltAuto(int seed)
+		public static KolcsonozhetoAuto randomHasznaltAuto(int seed)
         {
 			KolcsonozhetoAuto auto = randomUjAuto(seed);
 
