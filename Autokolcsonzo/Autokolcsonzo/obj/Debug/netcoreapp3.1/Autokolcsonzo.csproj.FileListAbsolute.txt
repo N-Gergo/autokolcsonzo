@@ -12,3 +12,17 @@ C:\Users\Tanulo\source\repos\autokolcsonzo\Autokolcsonzo\Autokolcsonzo\obj\Debug
 C:\Users\Tanulo\source\repos\autokolcsonzo\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.dll
 C:\Users\Tanulo\source\repos\autokolcsonzo\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.pdb
 C:\Users\Tanulo\source\repos\autokolcsonzo\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.genruntimeconfig.cache
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\bin\Debug\netcoreapp3.1\Autokolcsonzo.exe
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\bin\Debug\netcoreapp3.1\Autokolcsonzo.deps.json
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\bin\Debug\netcoreapp3.1\Autokolcsonzo.runtimeconfig.json
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\bin\Debug\netcoreapp3.1\Autokolcsonzo.runtimeconfig.dev.json
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\bin\Debug\netcoreapp3.1\Autokolcsonzo.dll
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\bin\Debug\netcoreapp3.1\Autokolcsonzo.pdb
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.csproj.AssemblyReference.cache
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.GeneratedMSBuildEditorConfig.editorconfig
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.AssemblyInfoInputs.cache
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.AssemblyInfo.cs
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.csproj.CoreCompileInputs.cache
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.dll
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.pdb
+d:\Users\User\Desktop\visual\Autokolcsonzo\Autokolcsonzo\obj\Debug\netcoreapp3.1\Autokolcsonzo.genruntimeconfig.cache

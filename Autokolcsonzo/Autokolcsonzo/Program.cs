@@ -36,7 +36,7 @@ namespace Kolcsonzo
 			flotta[6] = randomHasznaltAuto(5);
 			flotta[7] = adatBekeres();
 
-			for (int i = 0; i < 7; i++)
+			for (int i = 0; i <= 7; i++)
 			{
 				flotta[i].kategoriaBeallitas();
 			}
@@ -54,7 +54,9 @@ namespace Kolcsonzo
 				Console.Write(flotta[i].getBerelheto() + " ; ");
 				Console.WriteLine(flotta[i].getKategoria());
 			}
-			
+
+			OsszKm(flotta);
+
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
@@ -248,5 +250,15 @@ namespace Kolcsonzo
 			return auto;
 
 		}
+
+		public static void OsszKm(KolcsonozhetoAuto[] tomb)
+        {
+			int osszes = 0;
+            for (int i = 0; i <= 7; i++)
+            {
+				osszes += tomb[i].getMegtettKm();
+            }
+			Console.WriteLine("Az autok összesen megtett km-re: {0}km",osszes);
+        }
 	}
 }
